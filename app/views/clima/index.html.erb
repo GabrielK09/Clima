@@ -1,0 +1,29 @@
+<h1 class='title'>    
+    Resultados para <%= @data['name'] %>
+
+</h1> 
+
+<div class='container'>
+    <div class='status-left_'>
+        <section class="status-left">
+        <%= image_tag @icon_url, size:'105x105', class:'icon', alt:'Icon Not Found' %>
+
+        <div class='text'>
+            <%= @temperature_celsius %> °C <!-- Temperatura -->             
+            <p>Umidade: <%= @data['main']['humidity'] %> % </p> <!-- Umidade -->
+            <p>Velocidade do vento: <%= @velocidade_do_vento_km %> </p><!-- Vento -->
+        </div>
+
+        </section>
+    </div>
+
+    <div class='status-right_'>
+        <section class="status-right">
+            <h2> Clima </h2>
+            <p><%= dia_semana(Time.now) %>, <%= hora(Time.now) %> </p> <!-- Dia da semana -->
+            <p><%= @data['weather'].first['main'] %> </p> <!-- Clima -->
+            
+        </section>
+    </div>  
+
+</div>

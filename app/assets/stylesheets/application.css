@@ -1,0 +1,48 @@
+@font-face {
+    font-family: w11;
+    src: url(SegoeUIVF.ttf);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: w11;
+    background-color: #1f1f1f;
+    color: #fff;
+
+}
+
+.title{
+    margin: 25px 0 0 25px;
+    
+}
+
+.container{
+    margin: 25px 0 0 25px;
+    display: flex;
+    max-width: 400px;
+}
+
+.status-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+
+}
+
+.text{
+    margin: 0 0 0 15px;
+}
+
+
+.status-right_{
+    margin: 0 0 0 auto;
+    align-self: flex-start;
+    text-align: end;
+}
